@@ -2,7 +2,7 @@
 
 This repository provides details about image data:
 -   downloaded from Steam,
--   **filtered** following parts of the procedure in [`download-steam-banners-data`].
+-   **filtered** following parts of the procedure in [`download-steam-banners-data`][download-steam-banners-data].
 
 ## Data
 
@@ -11,12 +11,15 @@ Data downloaded from Steam consists of:
 -   JPG vertical banners.
 
 Here is an example of a logo:
+
 ![Example of a logo][logo-example]
 
 Here is an example of a vertical banner:
+
 ![Example of a vertical Banner][vertical-banner-example]
 
-The *up-to-date* list of appIDs for which I have *tried* to download image data is available in `data/queries/app_ids.txt`.
+The *up-to-date* list of appIDs for which I have *tried* to download image data is available in:
+> `data/download-queries/app_ids.txt`.
 Most of these ~48k appIDs do not feature any image data.
 
 Filtered image data is shared [on Google Drive][filtered-data-on-gdrive].
@@ -42,7 +45,7 @@ Suggestions of filtering include:
 -   filtering based on the number of detected faces, as in [`steam-face-detection`][steam-face-detection].
 
 The enforcement of such filtering is left to the reader.
-Otherwise, it would be difficult to keep **filtered** image data up-to-date in this repository.
+Otherwise, it would be difficult to keep **filtered** data up-to-date.
 
 <!-- Definitions -->
 
