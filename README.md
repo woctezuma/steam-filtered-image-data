@@ -36,7 +36,7 @@ The filtering consist in the removal of:
     - anything but RGB for banners,
 -   images for which the bounding box of the non-zero regions covers:
     - 100% of the image space for transparent logos,
-    - strictly less than 100% image space for banners, which happens with [vignetting][vignetting-wiki]).
+    - strictly less than 100% image space for banners, which happens with [vignetting][vignetting-wiki].
 
 ## Filtering suggestions
 
