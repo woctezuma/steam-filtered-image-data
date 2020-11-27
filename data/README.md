@@ -4,25 +4,25 @@ The directory structure is as follows:
 ```
 data/
 ├ banners/
-| ├ app_ids_banners.txt             # appIDs (including duplicates)
+| ├ app_ids_banners.txt             # AppIDs (including duplicates)
 | ├ duplicate_banners.txt           # ALL of the duplicates
-| ├ duplicate_banners_to_remove.txt # it is sufficient to remove these
-| └ duplicates_0.json               # matches between duplicates
+| ├ duplicate_banners_to_remove.txt # It is sufficient to remove these duplicates.
+| └ duplicates_0.json               # Matches between duplicates
 ├ download-queries/
-| ├ app_ids.txt                     # all the queried appIDs
-| └ delta_20201125.txt              # newly queried appIDs on Nov 25, 2020
+| ├ app_ids.txt                     # All the queried appIDs
+| └ delta_20201125.txt              # Newly queried appIDs on Nov 25, 2020
 ├ logos/
 | ├ app_ids_logos.txt
 | ├ duplicate_logos.txt
 | ├ duplicate_logos_to_remove.txt
 | └ duplicates_0.json
-├ merge/
-  ├ app_ids.txt                     # intersection of sets (cf. below)
-  └ app_ids_strict.txt              # ALL of the duplicates are removed
+└ merge/
+  ├ app_ids.txt                     # Intersection of sets (cf. below)
+  └ app_ids_strict.txt              # ALL of the duplicates are removed (cf. below)
 ```
 
 The file `app_ids_banners.txt` contains all the appIDs left after applying filters mentioned in the README.
-Duplicates have not yet been filtered out.
+Duplicates are not filtered out.
 
 The file `duplicate_banners_to_remove.txt` contains a list of appIDs which:
 -   are duplicates,
