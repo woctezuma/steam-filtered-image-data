@@ -15,13 +15,13 @@ Filtered image data is shared [on Google Drive][filtered-data-on-gdrive].
 The *up-to-date* list of appIDs for which I have *tried* to download image data is available in:
 > `data/download-queries/app_ids.txt`. Most of these ~48k appIDs do not feature any image data.
 
-Here is an example of a logo:
-
-![Example of a logo][logo-example]
-
 Here is an example of a vertical banner:
 
 ![Example of a vertical Banner][vertical-banner-example]
+
+Here is an example of a logo:
+
+![Example of a logo][logo-example]
 
 ## Filtering
 
