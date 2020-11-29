@@ -4,6 +4,8 @@ This repository provides details about image data:
 -   downloaded from Steam,
 -   **filtered** following parts of the procedure in [`download-steam-banners-data`][download-steam-banners-data].
 
+A dataset, called Steam-OneFace, is shared [in this section][steam-oneface-section].
+
 ## Data
 
 Data downloaded from Steam consists of:
@@ -75,6 +77,7 @@ app_ids = [int(Path(fname).stem) for fname in file_names]
 <!-- Definitions -->
 
 [download-steam-banners-data]: <https://github.com/woctezuma/download-steam-banners-data>
+[steam-oneface-section]: <https://github.com/woctezuma/steam-filtered-image-data#steam-oneface-dataset>
 
 [logo-example]: <https://cdn.cloudflare.steamstatic.com/steam/apps/546560/logo.png>
 [vertical-banner-example]: <https://cdn.cloudflare.steamstatic.com/steam/apps/546560/library_600x900.jpg>
