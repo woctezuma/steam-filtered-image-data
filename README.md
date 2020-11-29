@@ -10,6 +10,13 @@ Data downloaded from Steam consists of:
 -   PNG logos with transparency,
 -   JPG vertical banners.
 
+The *up-to-date* list of appIDs for which I have *tried* to download image data is available in:
+> `data/download-queries/app_ids.txt`.
+
+Most of these ~48k appIDs do not feature any image data.
+
+Filtered image data is shared [on Google Drive][filtered-data-on-gdrive].
+
 Here is an example of a logo:
 
 ![Example of a logo][logo-example]
@@ -17,12 +24,6 @@ Here is an example of a logo:
 Here is an example of a vertical banner:
 
 ![Example of a vertical Banner][vertical-banner-example]
-
-The *up-to-date* list of appIDs for which I have *tried* to download image data is available in:
-> `data/download-queries/app_ids.txt`.
-Most of these ~48k appIDs do not feature any image data.
-
-Filtered image data is shared [on Google Drive][filtered-data-on-gdrive].
 
 ## Filtering
 
@@ -53,6 +54,7 @@ The notebook [`build_steam_oneface_dataset.ipynb`][steam-oneface-notebook] shows
 [![Open In Colab][colab-badge]][steam-oneface-notebook]
 
 This allows to build a dataset, called `Steam-OneFace`, of 1311 images which should all feature exactly one face.
+
 This dataset is shared [on Google Drive][steam-oneface-gdrive] in:
 -   the original resolution (300x450): [`steam-oneface-hr.tar.gz`][steam-oneface-hr] (72 MB)
 -   a lower resolution (256x256): [`steam-oneface-lr.tar.gz`][steam-oneface-lr] (40 MB)
