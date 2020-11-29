@@ -38,7 +38,7 @@ The filtering consist in the removal of:
     - 100% of the image space for transparent logos,
     - strictly less than 100% image space for banners, which happens with [vignetting][vignetting-wiki].
 
-## Filtering suggestions
+## Suggestions of filtering
 
 Suggestions of filtering include:
 -   removal of duplicate images with [`imagededup`][imagededup],
@@ -46,6 +46,31 @@ Suggestions of filtering include:
 
 The enforcement of such filtering is left to the reader.
 Otherwise, it would be difficult to keep **filtered** data up-to-date.
+
+## Steam-OneFace dataset
+
+The notebook [`build_steam_oneface_dataset.ipynb`][steam-oneface-notebook] shows an application of the filters suggested above.
+[![Open In Colab][colab-badge]][steam-oneface-notebook]
+
+This allows to build a dataset, called `Steam-OneFace`, of 1311 images which should all feature exactly one face.
+This dataset is shared [on Google Drive][steam-oneface-gdrive] in:
+-   the original resolution (300x450): [`steam-oneface-hr.tar.gz`][steam-oneface-hr] (72 MB)
+-   a lower resolution (256x256): [`steam-oneface-lr.tar.gz`][steam-oneface-lr] (40 MB)
+
+[![Thumbnails of Steam OneFace][steam-oneface-cover-small]][steam-oneface-cover-big]
+
+To use this dataset on Google Colab, run the following:
+```bash
+!gdown --id 1-AdMe7AKyhtkulcfvazxlb0B52iCVDt2
+!tar xf steam-oneface-lr.tar.gz
+```
+```python
+import glob
+from pathlib import Path
+
+file_names = glob.glob('steam-oneface-lr/*.jpg')
+app_ids = [int(Path(fname).stem) for fname in file_names]
+```
 
 <!-- Definitions -->
 
@@ -60,5 +85,12 @@ Otherwise, it would be difficult to keep **filtered** data up-to-date.
 
 [imagededup]: <https://idealo.github.io/imagededup/>
 [steam-face-detection]: <https://github.com/woctezuma/steam-face-detection>
+
+[steam-oneface-notebook]: <https://colab.research.google.com/github/woctezuma/steam-filtered-image-data/blob/main/build_steam_oneface_dataset.ipynb>
+[steam-oneface-gdrive]: <https://drive.google.com/drive/folders/1MlpNk6PwYZWhJegMjuukcYCNFSnXR3wg>
+[steam-oneface-hr]: <https://drive.google.com/file/d/1Dk2eF0rokFFNQ-Oe7xK6PjHXSodmPIrV>
+[steam-oneface-lr]: <https://drive.google.com/file/d/1-AdMe7AKyhtkulcfvazxlb0B52iCVDt2>
+[steam-oneface-cover-small]: <https://raw.githubusercontent.com/wiki/woctezuma/steam-filtered-image-data/img/oneface-cover-small.jpg>
+[steam-oneface-cover-big]: <https://raw.githubusercontent.com/wiki/woctezuma/steam-filtered-image-data/img/oneface-cover.jpg>
 
 [colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
