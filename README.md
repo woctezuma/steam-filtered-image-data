@@ -63,7 +63,7 @@ This dataset is shared [on Google Drive][steam-oneface-gdrive] in:
 
 To use this dataset on Google Colab, run the following:
 ```bash
-!gdown --id 1-AdMe7AKyhtkulcfvazxlb0B52iCVDt2
+!gdown --id 1QptHrW9vloTtP--YJsxMY8PZWI2D8NJt
 !tar xf steam-oneface-lr.tar.gz
 ```
 ```python
