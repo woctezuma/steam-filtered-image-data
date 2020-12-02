@@ -74,6 +74,15 @@ file_names = glob.glob('steam-oneface-lr/*.jpg')
 app_ids = [int(Path(fname).stem) for fname in file_names]
 ```
 
+## References
+
+-   To download images: [`download_steam_banners.ipynb`][download_steam_banners] in [`woctezuma/google-colab`][code]
+-   To filter out duplicates, etc.:
+    - for PNG logos: [`remove_duplicates.ipynb`][filter_steam_logos] in [`woctezuma/google-colab`][code]
+    - for JPG banners: [`remove_duplicates.ipynb`][filter_steam_banners] in [`woctezuma/steam-stylegan2-ada`][code-ada]
+-   To detect faces: [`detect_faces_on_steam_banners.ipynb`][colab-notebook-face-detection] in [`woctezuma/steam-face-detection`][steam-face-detection]
+
+
 <!-- Definitions -->
 
 [download-steam-banners-data]: <https://github.com/woctezuma/download-steam-banners-data>
@@ -97,3 +106,10 @@ app_ids = [int(Path(fname).stem) for fname in file_names]
 [steam-oneface-cover-big]: <https://raw.githubusercontent.com/wiki/woctezuma/steam-filtered-image-data/img/oneface-cover.jpg>
 
 [colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
+
+[code]: <https://github.com/woctezuma/google-colab>
+[code-ada]: <https://github.com/woctezuma/steam-stylegan2-ada>
+[download_steam_banners]: <https://colab.research.google.com/github/woctezuma/google-colab/blob/master/download_steam_banners.ipynb>
+[filter_steam_logos]: <https://colab.research.google.com/github/woctezuma/google-colab/blob/master/remove_duplicates.ipynb>
+[filter_steam_banners]: <https://colab.research.google.com/github/woctezuma/steam-stylegan2-ada/blob/main/remove_duplicates.ipynb>
+[colab-notebook-face-detection]: <https://colab.research.google.com/github/woctezuma/steam-face-detection/blob/main/detect_faces_on_steam_banners.ipynb>
