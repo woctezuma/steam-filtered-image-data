@@ -27,7 +27,7 @@ Here is an example of a logo:
 
 ## Filtering
 
-The filtering consist in the removal of:
+The filtering consists in the removal of:
 -   blank images, i.e. images for which grayscale image intensity extrema are equal,
 -   images of uncommon resolution:
     - anything but 640x360 for logos,
