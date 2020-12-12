@@ -53,7 +53,8 @@ Otherwise, it would be difficult to keep **filtered** data up-to-date.
 The notebook [`build_steam_oneface_dataset.ipynb`][steam-oneface-notebook] shows an application of the filters suggested above.
 [![Open In Colab][colab-badge]][steam-oneface-notebook]
 
-There are two options for the face detector:
+There are three options for the face detector:
+-   [`dlib`][dlib-github]
 -   [`face-alignment`][python-face-alignment]
 -   [`retinaface_pytorch`][retinaface]
 
@@ -91,6 +92,20 @@ To use this dataset on Google Colab, run the following:
 !gdown --id 1-0Nk7H6Cn3Nt60EdHG_NWSA8ohi2oBqr
 !tar xf steam-oneface-lr_with_retinaface.tar.gz
 ```
+
+### With the `dlib` module
+
+The dataset consists of 305 images, shared in:
+-   the original resolution (300x450): [`steam-oneface-hr_with_dlib.tar.gz`][steam-oneface-hr-dlib] (16 MB)
+-   a lower resolution (256x256): [`steam-oneface-lr_with_dlib.tar.gz`][steam-oneface-lr-dlib] (9 MB)
+
+To use this dataset on Google Colab, run the following:
+```bash
+!gdown --id 1-4RIn9G9Bee2JZ1bK1gkkgkLocHuWJJ4
+!tar xf steam-oneface-lr_with_retinaface.tar.gz
+```
+
+NB: I would no
 
 ### With several detection modules
 
@@ -144,6 +159,7 @@ To use this dataset on Google Colab, run the following:
 [steam-face-detection]: <https://github.com/woctezuma/steam-face-detection>
 
 [steam-oneface-notebook]: <https://colab.research.google.com/github/woctezuma/steam-filtered-image-data/blob/main/build_steam_oneface_dataset.ipynb>
+[dlib-github]: <https://github.com/davisking/dlib>
 [python-face-alignment]: <https://github.com/1adrianb/face-alignment>
 [retinaface]: <https://github.com/ternaus/retinaface>
 [steam-oneface-gdrive]: <https://drive.google.com/drive/folders/1MlpNk6PwYZWhJegMjuukcYCNFSnXR3wg>
@@ -153,6 +169,8 @@ To use this dataset on Google Colab, run the following:
 [steam-oneface-cover-big]: <https://raw.githubusercontent.com/wiki/woctezuma/steam-filtered-image-data/img/oneface-cover.jpg>
 [steam-oneface-hr-retinaface]: <https://drive.google.com/file/d/1-04pq-vVnEU5T083DkeLmdRxP2dnQ4Vb>
 [steam-oneface-lr-retinaface]: <https://drive.google.com/file/d/1-0Nk7H6Cn3Nt60EdHG_NWSA8ohi2oBqr>
+[steam-oneface-hr-dlib]: <https://drive.google.com/file/d/1-4_-d8ClSCRzuULEVgV8gvjQHKkz0WuK>
+[steam-oneface-lr-dlib]: <https://drive.google.com/file/d/1-4RIn9G9Bee2JZ1bK1gkkgkLocHuWJJ4>
 
 [steam-oneface-notebook-trim]: <https://colab.research.google.com/github/woctezuma/steam-filtered-image-data/blob/main/trim_steam_oneface_dataset.ipynb>
 [steam-oneface-small-gdrive]: <https://drive.google.com/drive/folders/1jSCyxmthOoFQjUEfwRXNUT7Ap9oU8kY_>
