@@ -102,10 +102,8 @@ The dataset consists of 305 images, shared in:
 To use this dataset on Google Colab, run the following:
 ```bash
 !gdown --id 1-4RIn9G9Bee2JZ1bK1gkkgkLocHuWJJ4
-!tar xf steam-oneface-lr_with_retinaface.tar.gz
+!tar xf steam-oneface-lr_with_dlib.tar.gz
 ```
-
-NB: I would no
 
 ### With several detection modules
 
