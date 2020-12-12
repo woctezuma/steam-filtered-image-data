@@ -53,6 +53,12 @@ Otherwise, it would be difficult to keep **filtered** data up-to-date.
 The notebook [`build_steam_oneface_dataset.ipynb`][steam-oneface-notebook] shows an application of the filters suggested above.
 [![Open In Colab][colab-badge]][steam-oneface-notebook]
 
+There are two options for the face detector:
+-   [`face-alignment`][python-face-alignment]
+-   [`retinaface_pytorch`][retinaface]
+
+### With the `face_alignment` module
+
 This allows to build a dataset, called `Steam-OneFace`, of 1688 images which should all feature exactly one face.
 
 This dataset is shared [on Google Drive][steam-oneface-gdrive] in:
@@ -72,6 +78,18 @@ from pathlib import Path
 
 file_names = glob.glob('steam-oneface-lr/*.jpg')
 app_ids = [int(Path(fname).stem) for fname in file_names]
+```
+
+### With the `retinaface` module
+
+The dataset consists of 2472 images, shared in:
+-   the original resolution (300x450): [`steam-oneface-hr_with_retinaface.tar.gz`][steam-oneface-hr-retinaface] (133 MB)
+-   a lower resolution (256x256): [`steam-oneface-lr_with_retinaface.tar.gz`][steam-oneface-lr-retinaface] (74 MB)
+
+To use this dataset on Google Colab, run the following:
+```bash
+!gdown --id 1-0Nk7H6Cn3Nt60EdHG_NWSA8ohi2oBqr
+!tar xf steam-oneface-lr_with_retinaface.tar.gz
 ```
 
 ## References
@@ -99,11 +117,15 @@ app_ids = [int(Path(fname).stem) for fname in file_names]
 [steam-face-detection]: <https://github.com/woctezuma/steam-face-detection>
 
 [steam-oneface-notebook]: <https://colab.research.google.com/github/woctezuma/steam-filtered-image-data/blob/main/build_steam_oneface_dataset.ipynb>
+[python-face-alignment]: <https://github.com/1adrianb/face-alignment>
+[retinaface]: <https://github.com/ternaus/retinaface>
 [steam-oneface-gdrive]: <https://drive.google.com/drive/folders/1MlpNk6PwYZWhJegMjuukcYCNFSnXR3wg>
 [steam-oneface-hr]: <https://drive.google.com/file/d/1dmm1W8kPINVQrG8NbxXw_KEgU2Nkeksu>
 [steam-oneface-lr]: <https://drive.google.com/file/d/1QptHrW9vloTtP--YJsxMY8PZWI2D8NJt>
 [steam-oneface-cover-small]: <https://raw.githubusercontent.com/wiki/woctezuma/steam-filtered-image-data/img/oneface-cover-small.jpg>
 [steam-oneface-cover-big]: <https://raw.githubusercontent.com/wiki/woctezuma/steam-filtered-image-data/img/oneface-cover.jpg>
+[steam-oneface-hr-retinaface]: <https://drive.google.com/file/d/1-04pq-vVnEU5T083DkeLmdRxP2dnQ4Vb>
+[steam-oneface-lr-retinaface]: <https://drive.google.com/file/d/1-0Nk7H6Cn3Nt60EdHG_NWSA8ohi2oBqr>
 
 [colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
 
