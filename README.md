@@ -54,9 +54,9 @@ The notebook [`build_steam_oneface_dataset.ipynb`][steam-oneface-notebook] shows
 [![Open In Colab][colab-badge]][steam-oneface-notebook]
 
 There are three options for the face detector:
--   [`dlib`][dlib-github]
 -   [`face-alignment`][python-face-alignment]
 -   [`retinaface_pytorch`][retinaface]
+-   [`dlib`][dlib-github]
 
 ### With the `face_alignment` module
 
