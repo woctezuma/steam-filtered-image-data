@@ -92,6 +92,33 @@ To use this dataset on Google Colab, run the following:
 !tar xf steam-oneface-lr_with_retinaface.tar.gz
 ```
 
+### With several detection modules
+
+The notebook [`trim_steam_oneface_dataset.ipynb`][steam-oneface-notebook-trim] trims the dataset by intersecting the results of different detectors.
+[![Open In Colab][colab-badge]][steam-oneface-notebook-trim]
+
+The trimmed datasets are:
+
+-   [`Steam-OneFace-small`][steam-oneface-small-gdrive]:
+    - 993 images,
+    - obtained with modules `face_alignment` and `retinaface`,
+
+To use this dataset on Google Colab, run the following:
+```bash
+!gdown --id 1-1V5fDhPo75iDtAbrD18rppV-lf51bPW
+!tar xf steam-oneface-small-lr.tar.gz
+```
+
+-   [`Steam-OneFace-tiny`][steam-oneface-tiny-gdrive]:
+    - 168 images,
+    - obtained with modules `dlib`, `face_alignment` and `retinaface`.
+
+To use this dataset on Google Colab, run the following:
+```bash
+!gdown --id 1-2sCVgBUmu6LFug1pzBfmL8zNFFBq27F
+!tar xf steam-oneface-tiny-lr.tar.gz
+```
+
 ## References
 
 -   To download images: [`download_steam_banners.ipynb`][download_steam_banners] in [`woctezuma/google-colab`][code]
@@ -126,6 +153,10 @@ To use this dataset on Google Colab, run the following:
 [steam-oneface-cover-big]: <https://raw.githubusercontent.com/wiki/woctezuma/steam-filtered-image-data/img/oneface-cover.jpg>
 [steam-oneface-hr-retinaface]: <https://drive.google.com/file/d/1-04pq-vVnEU5T083DkeLmdRxP2dnQ4Vb>
 [steam-oneface-lr-retinaface]: <https://drive.google.com/file/d/1-0Nk7H6Cn3Nt60EdHG_NWSA8ohi2oBqr>
+
+[steam-oneface-notebook-trim]: <https://colab.research.google.com/github/woctezuma/steam-filtered-image-data/blob/main/trim_steam_oneface_dataset.ipynb>
+[steam-oneface-small-gdrive]: <https://drive.google.com/drive/folders/1jSCyxmthOoFQjUEfwRXNUT7Ap9oU8kY_>
+[steam-oneface-tiny-gdrive]: <https://drive.google.com/drive/folders/1Godpyq52rfrs8CXdSFzSt_CLErucYf6Z>
 
 [colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
 
