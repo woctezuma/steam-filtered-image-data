@@ -112,6 +112,8 @@ The notebook [`trim_steam_oneface_dataset.ipynb`][steam-oneface-notebook-trim] t
 
 The trimmed datasets are:
 
+#### Steam-OneFace-small
+
 -   [`Steam-OneFace-small`][steam-oneface-small-gdrive]:
     - 993 images,
     - obtained with modules `face_alignment` and `retinaface`,
@@ -121,6 +123,8 @@ To use this dataset on Google Colab, run the following:
 !gdown --id 1-1V5fDhPo75iDtAbrD18rppV-lf51bPW
 !tar xf steam-oneface-small-lr.tar.gz
 ```
+
+#### Steam-OneFace-tiny
 
 -   [`Steam-OneFace-tiny`][steam-oneface-tiny-gdrive]:
     - 168 images,
