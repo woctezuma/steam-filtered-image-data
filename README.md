@@ -132,6 +132,8 @@ To use this dataset on Google Colab, run the following:
 !tar xf steam-oneface-tiny-lr.tar.gz
 ```
 
+![Thumbnails of the WHOLE dataset Steam OneFace Tiny][steam-oneface-tiny-as-grid]
+
 ## References
 
 -   To download images: [`download_steam_banners.ipynb`][download_steam_banners] in [`woctezuma/google-colab`][code]
@@ -173,6 +175,7 @@ To use this dataset on Google Colab, run the following:
 [steam-oneface-notebook-trim]: <https://colab.research.google.com/github/woctezuma/steam-filtered-image-data/blob/main/trim_steam_oneface_dataset.ipynb>
 [steam-oneface-small-gdrive]: <https://drive.google.com/drive/folders/1jSCyxmthOoFQjUEfwRXNUT7Ap9oU8kY_>
 [steam-oneface-tiny-gdrive]: <https://drive.google.com/drive/folders/1Godpyq52rfrs8CXdSFzSt_CLErucYf6Z>
+[steam-oneface-tiny-as-grid]: <https://raw.githubusercontent.com/wiki/woctezuma/steam-filtered-image-data/img/steam-oneface-tiny-hr-grid-quality_20.jpg>
 
 [colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
 
